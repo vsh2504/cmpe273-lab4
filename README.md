@@ -126,6 +126,10 @@ reports that something has already happened.
 8. After a successful order, the Order Service sends an order created event
    to the Notification Service.
 
+Note on stock: the availability check is a query, so it is read only. It
+reports the current stock and it does not reserve or reduce stock. Stock
+reduction is outside the scope of this lab.
+
 ## API Summary
 
 Inventory Service:
